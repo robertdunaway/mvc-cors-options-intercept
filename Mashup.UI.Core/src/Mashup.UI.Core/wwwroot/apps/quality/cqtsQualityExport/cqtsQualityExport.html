@@ -1,0 +1,72 @@
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h1>CQTS Quality Export</h1>
+        <p>A basic export of Quality data by date.</p>
+    </div>
+    <div class="panel-body">
+        <div class="well">
+
+            <style>
+                span.error {
+                    color: red;
+                }
+            </style>
+            <form name="dataForm" novalidate>
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <div class="col-sm-3">
+                            <label class="vp-label">Begin Date</label>
+                            <div name="begindate" ngx-date-time-input ngx-settings="vm.beginDateTimeSettings" ng-model="vm.beginDate" required></div>
+                            <div class="vp-element-space"></div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <label class="vp-label">End Date</label>
+                            <div name="enddate" ngx-date-time-input ngx-settings="vm.endDateTimeSettings" ng-model="vm.endDate" required></div>
+                            <div class="vp-element-space"></div>
+                        </div>
+
+
+                        <div class="col-sm-2">
+                            <div style='margin-top: 24px;'>
+                                <ngx-button ngx-on-click="vm.getDataClick()" ngx-width="'100%'">Search</ngx-button>
+                                <div class="vp-element-space"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <!--Below seemed required at one time but should be re-investigated-->
+        <span ng-bind="vm.beginDate" hidden> </span>
+        <span ng-bind="vm.endDate" hidden> </span>
+
+
+        <div style='margin-bottom: 20px;'>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <ngx-button ngx-on-click="vm.excelExportClick()" ngx-width="'100%'">Export to Excel</ngx-button>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <ngx-button ngx-on-click="vm.csvExportClick()" ngx-width="'100%'">Export to CSV</ngx-button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div ngx-grid-view ngx-settings="vm.gridSettings" ngx-export-settings="vm.exportSettings" ngx-page-size="vm.pageSize"></div>
+
+
+
+    </div>
+</div>

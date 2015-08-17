@@ -1,0 +1,57 @@
+{
+	"0": {
+		"name": "Applications",
+		"id": "catApps",
+		"isOpen": "true",
+		"icon": " fa-power-off ",
+		"session": "coreSession",
+		"role": "MashupUser",
+		"groups": [
+			{
+				"name": "quality",
+				"id": "menuItemApp1",
+				"desc": "CQTS Quality Export",
+				"url": "/quality/cqtsQualityExport",
+				"icon": " fa-bar-chart ",
+				"session": "coreSession",
+				"role": "MashupUser"
+			},
+			{
+				"name": "quality",
+				"id": "menuItemApp1",
+				"desc": "CQTS Trans Export",
+				"url": "/quality/cqtsTransExport",
+				"icon": " fa-bar-chart ",
+				"session": "coreSession",
+				"role": "MashupUser"
+			}
+		]
+	},
+	"1": {
+		"name": "Utilities",
+		"id": "catUtilities",
+		"isOpen": "false",
+		"icon": " fa-cogs ",
+		"session": "coreSession",
+		"role": "MashupUser",
+		"groups": []
+	},
+	"2": {
+		"name": "Administrative",
+		"id": "catAdmin",
+		"isOpen": "false",
+		"icon": " fa-users",
+		"session": "coreSession",
+		"role": "MashupUser",
+		"groups": []
+	},
+	"3": {
+		"name": "Examples",
+		"id": "catExamples",
+		"isOpen": "false",
+		"icon": " fa-file-code-o ",
+		"session": "coreSession",
+		"role": "MashupUser",
+		"groups": []
+	}
+}

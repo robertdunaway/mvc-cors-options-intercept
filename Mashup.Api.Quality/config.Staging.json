@@ -1,0 +1,8 @@
+﻿{
+    "connections": {
+        "cqts": "User Id=ccts_PGR;Password=CCTS_PGR;data source=(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = VORA1701D)(PORT = 1521))(CONNECT_DATA =(SID = companyD01)));",
+        "cqtsreadonly": "User Id=Crystal;Password=crystal;data source=(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = VORA1701D)(PORT = 1521))(CONNECT_DATA =(SID = companyD01)));",
+        "connectionpool": "Min Pool Size=10;Max Pool Size=200;Connection Lifetime=120;Connection Timeout=60;Incr Pool Size=5; Decr Pool Size=2;",
+        "testEnv" : "The Staging Config File."
+    }
+}

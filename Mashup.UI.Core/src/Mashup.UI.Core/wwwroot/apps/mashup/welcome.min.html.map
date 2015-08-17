@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["apps/mashup/welcome.html"],"sourcesContent":["<!-- Main jumbotron for a primary marketing message or call to action -->\r\n<div class=\"jumbotron\">\r\n    <div class=\"container\">\r\n        <h1>Welcome to the Mashup</h1>\r\n    </div>\r\n</div>"],"file":"apps/mashup/welcome.min.html","sourceRoot":"/source/"}
